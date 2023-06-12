@@ -1,6 +1,12 @@
 # 3.2_Touchsy_Pico_W_Capacitive_Software
+<img src="https://github.com/sbcshop/3.2_Touchsy_HAT_Resistive_Software/blob/main/images/Touchsy%20banner.jpg">
+
+Touchsy Pico W - the ultimate display solution for users who want an onboard controller with a versatile programming platform. This Github provides getting started guide for **_Capacitive_** Variant of Touchsy Family.
+
+With Touchsy Pico W, you can easily program your display with your preferred language and use it in various projects and applications, from IoT to robotics. The [**Resistive**](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/) and **Capacitive** touchscreen options allow you to choose the best option for your specific needs, and the additional GPIO pins allow you to connect more hardware to your display.
 
 
+## Getting Started with 3.2 Touchsy Pico W Capacitive
 
 
 
