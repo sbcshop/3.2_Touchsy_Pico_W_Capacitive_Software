@@ -52,21 +52,35 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
 - Display and Capacitive Touch controller interfacing with Pico W
   | Pico W | Display | Code variables | Function |
   |---|---|---|---|
-  |GP6  | DC/SCL SPI | TFT_CLK_PIN  |Clock pin of SPI interface for Display|
-  |GP7  | SDI SPI/SDA | TFT_MOSI_PIN | MOSI (Master OUT Slave IN) pin of SPI interface|
-  |GP13 | CS/SPI CS  | TFT_CS_PIN   | Chip Select pin of SPI interface|
-  |GP11 | WR/SPI D/C | TFT_DC_PIN   | Data/Command pin of SPI interface|
-  |GP14 | RESET | TFT_RST_PIN  | Display Reset pin|
+  |GP6  | DC/SCL SPI | sck  |Clock pin of SPI interface for Display|
+  |GP7  | SDI SPI/SDA | mosi | MOSI (Master OUT Slave IN) pin of SPI interface|
+  |GP13 | CS/SPI CS  | cs   | Chip Select pin of SPI interface|
+  |GP11 | WR/SPI D/C | dc   | Data/Command pin of SPI interface|
+  |GP14 | RESET | rst  | Display Reset pin|
+  |GP15 |Driven via Transistor| BL |Backlight of display|
 
+  Display setting code snippets view:
+  ```
+  #define SPI interface for display with Pico W
+  spi = SPI(0, baudrate=40000000, sck=Pin(6), mosi=Pin(7))
+  display = Display(spi, dc=Pin(11), cs=Pin(13), rst=Pin(14),rotation = 180)
+  ```
+
+  ```
+    BL = Pin(15, Pin.OUT) #define pin as OUTPUT
+    BL.value(1) #Turn on Backlight
+  ```
+  
   | Pico W | Capacitive Touch | Code variables | Function |
   |---|---|---|---|
-  |GP2 | DCLK | XPT_CLK_PIN  |Clock pin of SPI interface for touch controller|
-  |GP3 | DIN | XPT_MOSI_PIN | MOSI (Master OUT Slave IN) data pin of SPI interface|
-  |GP4 | DOUT | XPT_MISO_PIN   | MISO (Master IN Slave OUT) data pin of SPI interface|
-  |GP5 | CS | XPT_CS_PIN   | Chip Select pin of SPI interface|
-  |GP10 | PENIRQ | XPT_INT | Touch controller Interrupt pin|
+  |GP2 | SCL | scl  | Serial Clock pin of I2C interface for touch controller|
+  |GP3 | SDA | sda | Serial data pin of I2C interface|
 
-
+  Touch setting code snippets view:
+  ```
+    #define I2C interface for FT6236 touch controller with Pico W
+    i2c=I2C(0,sda=Pin(20), scl=Pin(21))
+  ```
 - Pico W and micro SD card interfacing
 
   | Pico W | microSD Card | Function |
@@ -76,18 +90,31 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
   |GP16 | DOUT | MISO (Master IN Slave OUT) data pin of SPI interface|
   |GP17 | CS   | Chip Select pin of SPI interface|
 
+   Sdcard setting code snippets view:
+  ```
+    spi=SPI(0,sck=Pin(18),mosi=Pin(19),miso=Pin(16))
+    sd=sdcard.SDCard(spi,Pin(17))
+  ```
+
 - Buttons, Buzzer and LED Interfacing with Pico W
   | Pico W | Buttons | Function |
   |---|---|---|
-  |GP9 | BT1 |Programmable button|
-  |GP26 | BT2 |Programmable button|
-  |GP27 | BT3 |Programmable button|
-  |GP8 | BT4 |Programmable button|
+  |GP4 | BT1 |Programmable button|
+  |GP8 | BT2 |Programmable button|
+  |GP9 | BT3 |Programmable button|
+  |GP5 | BT4 |Programmable button|
 
   | Pico W | Hardware |
   |---|---|
   |GP22 | Buzzer |
   |GP25 | LED (OnBoard Pico W) |
+
+  Code snippets:
+  ```
+  buzzer = PWM(Pin(22)) #define PWM output
+  button1 = Pin(4, Pin.IN, Pin.PULL_UP) #define input pin with PULLUP
+  ```
+  
 - Breakout GPIOs
   | Pico W |Physical Pin | Multi-Function |
   |---|---|---|
