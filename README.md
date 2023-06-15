@@ -8,7 +8,6 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
 
 ### Features:
 - Official Raspberry Pi Pico W onboard for versatile programming options (Python, Arduino IDE, C, C++)
--	Available in two variants: Resistive and Capacitive touchscreen
 -	SD card slot for storage and data transfer
 -	Battery port connector with Battery Management for portable use (3.7V Lithium)
 -	4 programmable buttons for customizable control options
@@ -20,8 +19,7 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
 -	Operating voltage of pins 3.3V and board supply 5V
 -	3.2” Display with resolution 240 × 320
 -	ILI934 Display Driver
--	FT6236 capacitive touch controller (Capacitive Variant)
--	XPT2046 resistive touch controller 
+-	FT6236 capacitive touch controller
 -	Appearance: RGB
 -	Colors: 65K/262K
 -	Viewing Angle(in degree): Left:70, Right:70, Up:50, Down:70 
@@ -51,7 +49,7 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
 - (9) Type C input power
 
 ### Interfacing Details
-- Display and Resistive Touch controller interfacing with Pico W
+- Display and Capacitive Touch controller interfacing with Pico W
   | Pico W | Display | Code variables | Function |
   |---|---|---|---|
   |GP6  | DC/SCL SPI | TFT_CLK_PIN  |Clock pin of SPI interface for Display|
@@ -60,7 +58,7 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
   |GP11 | WR/SPI D/C | TFT_DC_PIN   | Data/Command pin of SPI interface|
   |GP14 | RESET | TFT_RST_PIN  | Display Reset pin|
 
-  | Pico W | Resistive Touch | Code variables | Function |
+  | Pico W | Capacitive Touch | Code variables | Function |
   |---|---|---|---|
   |GP2 | DCLK | XPT_CLK_PIN  |Clock pin of SPI interface for touch controller|
   |GP3 | DIN | XPT_MOSI_PIN | MOSI (Master OUT Slave IN) data pin of SPI interface|
@@ -109,7 +107,7 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
    - Select device at the bottom right with a suitable COM port, as shown in the below figure. You might get a different COM port.
       <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img1.jpg" />
       <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img2.jpg" />
-   - Write simple onboard blink Python code or [Download Led blink code](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/examples/onboard_ledBlink.py), then click on the green run button to make your script run on Touchsy. 
+   - Write simple onboard blink Python code or [Download Led blink code](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/examples/onboard_ledBlink.py), then click on the green run button to make your script run on Touchsy. 
       <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img3.jpg" />
      
      Now that we've reached this point, you're executing your script through Thonny IDE, so if you unplug Pico, it will stop running. To run your script without using an IDE, simply power up Touchsy and it should run your script, go to step 3. Once you have transferred your code to the Touchsy board, to see your script running, just plug in power either way using micro USB or Type C, both will work.
@@ -119,9 +117,9 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
      
       <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/transfer_script_pico.gif" />
    
-   In similar way you can add various python code files to Pico. Also you can try out sample codes given here in [examples folder](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/tree/main/examples). But make sure you have all required library files inside Pico W of Touchsy, if not only then follow below steps otherwise skip.
-   - Mostly you will receive Touchsy with all required library files preinstalled. But in any case if you need to save library files from [lib](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/tree/main/lib) folder into Pico W of Touchsy, then download repo and follow below steps to move lib file into Pico of Touchsy.
-      <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/multiple_file_transfer.gif" />
+   In similar way you can add various python code files to Pico. Also you can try out sample codes given here in [examples folder](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/tree/main/examples). But make sure you have all required library files inside Pico W of Touchsy, if not only then follow below steps otherwise skip.
+   - Mostly you will receive Touchsy with all required library files preinstalled. But in any case if you need to save library files from [lib](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/tree/main/lib) folder into Pico W of Touchsy, then download repo and follow below steps to move lib file into Pico of Touchsy.
+      <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/images/multiple_file_transfer.gif" />
    
 **NOTE: Don't rename _lib_ files** and also you will have to move related font file if used inside code.
 
@@ -137,9 +135,9 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
    Now you are ready to try out your own codes, **_Happy Coding!_**
    
 ## Documentation
-  * [Schematic](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Hardware/blob/main/Design%20Data/SCH%203.2%20Touchsy%20%20Pico%20w%20(Resistive).pdf)
-  * [Hardware Files](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Hardware/tree/main)
-  * [Step File](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Hardware/blob/main/Mechanical%20Data/STEP%20%203.2%20inch%20Touchsy%20based%20on%20PICO%20W%20(Resistive).step)
+  * [Schematic](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Hardware/blob/main/Design%20Data/SCH%203.2%20Touchsy%20%20Pico%20w%20(Resistive).pdf)
+  * [Hardware Files](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Hardware/tree/main)
+  * [Step File](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Hardware/blob/main/Mechanical%20Data/STEP%20%203.2%20inch%20Touchsy%20based%20on%20PICO%20W%20(Resistive).step)
   * [MicroPython getting started for RPi Pico/Pico W](https://docs.micropython.org/en/latest/rp2/quickref.html)
   * [Pico W Getting Started](https://projects.raspberrypi.org/en/projects/get-started-pico-w)
   * [RP2040 Datasheet](https://github.com/sbcshop/HackyPi-Hardware/blob/main/Documents/rp2040-datasheet.pdf)
