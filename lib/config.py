@@ -4,7 +4,6 @@ from xpt2046 import Touch
 
 TFT_CLK_PIN = const(6)
 TFT_MOSI_PIN = const(7)
-TFT_MISO_PIN = const(4)
 
 TFT_CS_PIN = const(13)
 TFT_RST_PIN = const(14)
