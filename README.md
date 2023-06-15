@@ -28,9 +28,9 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
 
 ## Getting Started with 3.2 Touchsy Pico W Capacitive
 ### Pinout
-<img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/Touchsy%20Pico%20Res%20pinout.jpg">
+<img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/images/Touchsy%20Pico%20Cap%20pinout.jpg">
 
-- (1) 3.2” Resistive Touch Display 
+- (1) 3.2” Capacitive Touch Display 
 
 - (2) Battery connector
 
