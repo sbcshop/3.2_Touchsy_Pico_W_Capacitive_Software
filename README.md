@@ -118,6 +118,7 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
       <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/transfer_script_pico.gif" />
    
    In similar way you can add various python code files to Pico. Also you can try out sample codes given here in [examples folder](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/tree/main/examples). But make sure you have all required library files inside Pico W of Touchsy, if not only then follow below steps otherwise skip.
+   
    - Mostly you will receive Touchsy with all required library files preinstalled. But in any case if you need to save library files from [lib](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/tree/main/lib) folder into Pico W of Touchsy, then download repo and follow below steps to move lib file into Pico of Touchsy.
       <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/images/multiple_file_transfer.gif" />
    
