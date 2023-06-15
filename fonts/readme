@@ -1,1 +1,3 @@
-This folder contains various font files which can be included for text display
+This folder contains various font files which can be included into script code to change display text Font, Size and Style. 
+
+Note: Location of corresponding font file must be root of Raspberry Pi Pico where main.py present
