@@ -1,4 +1,4 @@
 This folder included required Library files:
- - ili9341.py & xglcd_font.py : for graphics display function
- - FT6236.py : for FT6236 capacitive touch controller methods and variables
- - sdcard.py : to access methods for micro SD card operations
+1) ili9341.py & xglcd_font.py : for graphics display function
+2) FT6236.py : for FT6236 capacitive touch controller methods and variables
+3) sdcard.py : to access methods for micro SD card operations
