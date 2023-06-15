@@ -1,1 +1,4 @@
-
+config.py - library file includes setup for Display and Touch controller interfacing 
+ili9341.py & xglcd_font.py - library file for graphics display function
+FT6236.py - library file for FT6236 touch controller 
+sdcard.py - library file to access methods for micro SD card operations
