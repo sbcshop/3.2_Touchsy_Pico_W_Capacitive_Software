@@ -4,8 +4,8 @@ import machine
 import urequests # handles making and servicing network requests
 import json
 
-ssid = 'Tech SB_2G'
-password = 'jc643111h@'
+ssid = 'your network ssid'
+password = 'your network password'
 
 def connect():
     #Connect to WLAN
