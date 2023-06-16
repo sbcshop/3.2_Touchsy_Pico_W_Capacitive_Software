@@ -154,11 +154,12 @@ With Touchsy Pico W, you can easily program your display with your preferred lan
 
 ### Example Codes
    Save whatever example code file you want to try as main.py in pico w as shown in above [step 3](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software#3-how-to-move-your-script-on-pico-w-of-touchsy), also add related lib files with default name.
-   - [Example 1]() : This code generates pattern, you can experiment to develop your favourite one
-   - [Example 2]() : Try this code to display text, make sure to install library EnkPi_7in5.py
-   - [Example 3]() : Play with some shapes like circle, square, etc.
-   - [Example 4]() : To display images on EnkPi, this code need library EnkPi_7in5.py & pics.py and to follow this example you have to go through [Step by Step Guide to build byte array from Image](https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/Downloads/Step%20by%20Step%20Guide%20to%20create%20byte%20array%20from%20image.pdf)
-   - and [More...](https://github.com/sbcshop/EnkPi_7.5_Software/tree/main/examples)
+   - [Example 1](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/examples/DisplayDemo.py) : Display demo code
+   - [Example 2](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/examples/TouchDemo.py) : Touch demo code
+   - [Example 3](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/examples/ButtonDemo.py) : Button & Buzzer testing with display code
+   - [Example 4](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/examples/demo_SDcard.py) : How to use sdcard for data write operation
+   - [Example 5](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/examples/colorWheel.py) : Animation colorWheel demo
+   - and [Many more...](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/tree/main/examples)
    
    Now you are ready to try out your own codes, **_Happy Coding!_**
    
